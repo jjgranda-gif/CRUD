@@ -27,3 +27,11 @@ model Post {
   author    User    @relation(fields: [authorId], references: [id]) 
   authorId  Int
 } 
+
+
+model Menu {
+  id          Int    @id @default(autoincrement())
+  Nombre      String
+  Precios     Float
+  Descripcion String
+}
